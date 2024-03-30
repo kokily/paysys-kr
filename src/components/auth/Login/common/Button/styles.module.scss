@@ -1,0 +1,83 @@
+@import '@/styles/utils.scss';
+@import '@/styles/colors.scss';
+
+.button {
+  font-size: 1rem;
+  font-weight: bold;
+  width: 90px;
+  border-radius: 6px;
+  padding: 0.5rem;
+  padding-bottom: 0.4rem;
+  cursor: pointer;
+  transition: 0.2s all;
+
+  &:active {
+    transform: translateY(3px);
+  }
+
+  &+& {
+    margin-left: 1rem;
+  }
+
+  &.submit {
+    border: 1px solid $submit;
+    background-color: white;
+    color: $submit;
+
+    &:hover {
+      background-color: $submit;
+      color: white;
+
+      @include shadow;
+    }
+  }
+
+  &.cancel {
+    border: 1px solid $cancel;
+    background-color: white;
+    color: $cancel;
+
+    &:hover {
+      background-color: $cancel;
+      color: white;
+
+      @include shadow;
+    }
+  }
+
+  &.update {
+    border: 1px solid $update;
+    background-color: white;
+    color: $update;
+
+    &:hover {
+      background-color: $update;
+      color: white;
+
+      @include shadow;
+    }
+  }
+
+  &.menu {
+    border: 1px solid $menu;
+    background-color: white;
+    color: $menu;
+
+    &:hover {
+      background-color: $menu;
+      color: white;
+
+      @include shadow;
+    }
+  }
+
+  &.thin {
+    width: auto;
+  }
+
+  &.fullSize {
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 1rem;
+  }
+}
