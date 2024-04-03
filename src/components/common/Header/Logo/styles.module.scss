@@ -1,0 +1,35 @@
+@import '@/styles/colors.scss';
+
+.button {
+  font-size: 1.4rem;
+  letter-spacing: 2px;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  background: none;
+  text-shadow: 1px 1px 4px #9a9a9a;
+
+  &:hover {
+    text-shadow: 0.5px 0.5px;
+  }
+
+  &.member {
+    color: $member;
+  }
+
+  &.associate {
+    color: $associate;
+  }
+
+  &.general {
+    color: $general;
+  }
+
+  &.cart {
+    color: $cart;
+  }
+
+  &.bills {
+    color: $bill;
+  }
+}

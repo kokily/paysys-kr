@@ -36,3 +36,9 @@
     border-color: transparent;
   }
 }
+
+@keyframes shine {
+  to {
+    background-position: 100% 0, 0 0;
+  }
+}

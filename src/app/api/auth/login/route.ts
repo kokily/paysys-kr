@@ -15,7 +15,7 @@ export async function POST(req: NextRequest) {
     if (user && (await bcrypt.compare(password, user.password))) {
       const serializedUser = serializeUser(user);
       const result = {
-        ...serializeUser,
+        ...serializedUser,
         token: signJwtAccessToken(serializedUser),
       };
 
