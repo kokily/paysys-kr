@@ -2,6 +2,9 @@
   "name": "paysys-kr",
   "version": "0.1.0",
   "private": true,
+  "prisma": {
+    "seed": "node --require esbuild-register prisma/seed.ts"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -14,6 +17,7 @@
     "axios": "^1.6.8",
     "bcryptjs": "^2.4.3",
     "clsx": "^2.1.0",
+    "esbuild": "^0.20.2",
     "jotai": "^2.7.2",
     "jsonwebtoken": "^9.0.2",
     "next": "14.1.4",
@@ -31,6 +35,7 @@
     "@types/qs": "^6.9.14",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "esbuild-register": "^3.5.0",
     "eslint": "^8",
     "eslint-config-next": "14.1.4",
     "prisma": "^5.11.0",

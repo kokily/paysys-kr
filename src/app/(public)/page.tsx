@@ -6,7 +6,11 @@ import { useLogin } from '@/helpers/client/hooks/auth/useLogin';
 function LoginPage() {
   const props = useLogin();
 
-  return <Login {...props} />;
+  return (
+    <>
+      <Login {...props} />
+    </>
+  );
 }
 
 export default LoginPage;

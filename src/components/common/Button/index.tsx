@@ -3,12 +3,12 @@ import clsx from 'clsx';
 import styles from './styles.module.scss';
 
 interface Props extends PropsWithChildren {
-  $cancel?: boolean;
   $submit?: boolean;
+  $cancel?: boolean;
   $update?: boolean;
   $menu?: boolean;
-  $fullSize?: boolean;
   $thin?: boolean;
+  $fullSize?: boolean;
   onClick?: (e: any) => void;
 }
 
@@ -28,7 +28,7 @@ export function Button(props: Props) {
         if (props.onClick) {
           props.onClick(e);
         }
-        (e.target as HTMLButtonElement).blur;
+        (e.target as HTMLButtonElement).blur();
       }}
     >
       {props.children}

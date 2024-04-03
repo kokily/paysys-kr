@@ -2,9 +2,9 @@ import type { ChangeEvent, KeyboardEvent, SyntheticEvent } from 'react';
 import styles from './styles.module.scss';
 import { useAtomValue } from 'jotai';
 import { authState } from '@/helpers/client/atoms/auth';
-import { ModalLink } from './ModalLink';
 import { AuthInput } from './AuthInput';
 import { AuthButtons } from './AuthButtons';
+import { ModalLink } from '../ModalLink';
 
 interface Props {
   onChange: (e: ChangeEvent<HTMLInputElement>) => void;

@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import styles from './styles.module.scss';
-import { Button } from '../../common/Button';
+import { Button } from '../../../common/Button';
 
 export function ModalLink() {
   const [isOpen, setIsOpen] = useState(false);

@@ -14,7 +14,6 @@ export function AuthInput(props: Props) {
   return (
     <div className={styles.container}>
       <input {...props} className={styles.input} required />
-      <span className={styles.bar} />
       <label className={styles.label} htmlFor={props.name}>
         {props.label}
       </label>

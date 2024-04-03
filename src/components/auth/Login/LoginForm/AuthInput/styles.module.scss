@@ -8,20 +8,25 @@
 
 .input {
   border: none;
-  border-bottom: 1px solid $submit;
+  border: 1px solid $submit;
+  border-radius: 6px;
   padding: 10px;
   display: block;
-  width: 92%;
+  width: 100%;
 
   &:focus {
     outline: none;
+    border: 2px solid $submit;
   }
 
   &:focus~label,
   &:valid~label {
     top: -10px;
+    left: 10px;
     font-size: 14px;
+    padding: 0 5px;
     color: $submit;
+    background-color: white;
   }
 
   &:focus~.bar:before {
@@ -30,27 +35,11 @@
   }
 }
 
-.bar {
-  position: relative;
-  display: block;
-  width: 100%;
-
-  &:before {
-    content: '';
-    position: absolute;
-    background: $submit;
-    height: 3px;
-    left: 50%;
-    right: 50%;
-    bottom: 0;
-    transition: left 0.2s ease-out, right 0.2s ease-out;
-  }
-}
-
 .label {
   position: absolute;
-  color: #212529;
+  color: #797f85;
+  font-size: 14px;
   top: 12px;
-  left: 0;
+  left: 8px;
   transition: 0.2s ease all;
 }
