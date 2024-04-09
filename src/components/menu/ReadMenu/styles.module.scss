@@ -1,0 +1,51 @@
+@import '@/styles/utils.scss';
+@import '@/styles/colors.scss';
+
+.container {
+  position: absolute;
+  width: 320px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  animation: 0.5s ease-out 0s 1 fadeIn;
+
+  @include shadow;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3.5rem;
+  color: white;
+  font-size: 1.7rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  cursor: pointer;
+  transition: 0.2s;
+
+  &.member {
+    background-color: $member;
+  }
+
+  &.associate {
+    background-color: $associate;
+  }
+
+  &.general {
+    background-color: $general;
+  }
+}
+
+.contents {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: white;
+  padding: 1.5rem;
+  height: auto;
+}

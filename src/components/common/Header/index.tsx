@@ -32,8 +32,6 @@ export function Header() {
     return () => window.removeEventListener('click', onOutsideClick, true);
   }, [apeachRef]);
 
-  console.log(data);
-
   return (
     <header className={styles.container}>
       <div className={styles.layout}>

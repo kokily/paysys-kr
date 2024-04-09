@@ -1,0 +1,56 @@
+@import '@/styles/utils.scss';
+@import '@/styles/colors.scss';
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 55px;
+  font-size: 1.215rem;
+  font-weight: 700;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: all 0.1s;
+
+  @include shadow;
+
+  &:active {
+    transform: translateY(3px);
+  }
+
+  &.member {
+    color: $member;
+    background-color: white;
+    border: 2px double $member;
+
+    &:hover {
+      color: white;
+      background-color: $member;
+    }
+  }
+
+  &.associate {
+    color: $associate;
+    background-color: white;
+    border: 2px double $associate;
+
+    &:hover {
+      color: white;
+      background-color: $associate;
+    }
+  }
+
+  &.general {
+    color: $general;
+    background-color: white;
+    border: 2px double $general;
+
+    &:hover {
+      color: white;
+      background-color: $general;
+    }
+  }
+}

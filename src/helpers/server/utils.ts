@@ -2,6 +2,7 @@ import { type NextAuthOptions, getServerSession } from 'next-auth';
 import Credentials from 'next-auth/providers/credentials';
 import db from './database';
 import { User } from '@prisma/client';
+import { NextRequest } from 'next/server';
 
 /**
  * Next Auth Credential Options
@@ -106,4 +107,8 @@ export function serializeUser(user: User) {
   const { password, ...userWithoutPasword } = user;
 
   return userWithoutPasword;
+}
+
+export function getQuery(req: NextRequest, queryName: string) {
+  return new URL(req.nextUrl).searchParams.get(queryName) ?? '';
 }

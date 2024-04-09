@@ -1,0 +1,50 @@
+@import '@/styles/utils.scss';
+@import '@/styles/colors.scss';
+
+.container {
+  tr {
+    &:hover {
+      background: rgba(0, 0, 0, 0.2);
+    }
+  }
+
+  th,
+  td {
+    width: 160px;
+    border-radius: 8px;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    text-align: center;
+
+    input {
+      width: 75%;
+      height: 1.5rem;
+      padding: 0.5rem;
+      border-radius: 4px;
+      outline: none;
+    }
+  }
+
+  th {
+    color: white;
+
+    &.member {
+      background-color: $member;
+    }
+
+    &.associate {
+      background-color: $associate;
+    }
+
+    &.general {
+      background-color: $general;
+    }
+  }
+
+  input {
+    outline: none;
+    padding: 0.5rem;
+    margin-left: 1rem;
+    border-radius: 4px;
+  }
+}

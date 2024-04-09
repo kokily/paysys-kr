@@ -2,7 +2,7 @@ import { NextRequest, NextResponse } from 'next/server';
 import bcrypt from 'bcryptjs';
 import db from '@/helpers/server/database';
 import { serializeUser } from '@/helpers/server/utils';
-import { signJwtAccessToken } from '@/helpers/client/tokens';
+import { signJwtAccessToken } from '@/helpers/client/utils/tokens';
 
 export async function POST(req: NextRequest) {
   const { username, password } = (await req.json()) as AuthPayload;
