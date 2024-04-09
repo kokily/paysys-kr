@@ -29,4 +29,13 @@ declare global {
     createdAt: Date;
     updatedAt: Date;
   }
+
+  type TargetType = Dispatch<SetStateAction<HTMLElement> | null | undefined>;
+
+  interface ModalType {
+    modal: boolean;
+    onModalClick: () => void;
+    onConfirm: (e: SyntheticEvent) => void;
+    onCancel: () => void;
+  }
 }

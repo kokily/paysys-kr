@@ -4,6 +4,7 @@ import './globals.css';
 import SessionWrapper from '@/wrapper/SessionWrapper';
 import QueryWrapper from '@/wrapper/QueryWrapper';
 import ToastWrapper from '@/wrapper/ToastWrapper';
+import 'react-toastify/ReactToastify.css';
 
 const nanumGothic = localFont({
   src: '../../public/fonts/NanumGothic-Regular.ttf',
